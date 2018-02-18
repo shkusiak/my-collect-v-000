@@ -1,4 +1,7 @@
-
+array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+my_collect(array) {|name|
+  name.split(" ").first
+}
 
 def my_collect(array)
   i = 0
@@ -9,7 +12,3 @@ def my_collect(array)
   end
   collection
 end
-
-my_collect(array) {|name|
-  name.split(" ").first
-}
